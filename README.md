@@ -5,7 +5,7 @@ Add to `.repo/local_manifests/ha3g.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/samsung/ha3g" name="android_device_samsung_ha3g" remote="TeamWin" revision="android-6.0" />
+	<project path="device/samsung/ha3g" name="couths/android_device_samsung_ha3g-twrp" remote="github" revision="twrp-7.1" />
 </manifest>
 ```
 
