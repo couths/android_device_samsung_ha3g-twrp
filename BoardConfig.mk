@@ -47,7 +47,7 @@ BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/ha3g/bootimg.mk
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 TW_EXCLUDE_NANO := true
-TW_EXCLUDE_BASH := true
+# TW_EXCLUDE_BASH := true
 TW_DEFAULT_LANGUAGE := en-US
 TWRP_INCLUDE_LOGCAT := true
 RECOVERY_SDCARD_ON_DATA := true
