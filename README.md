@@ -5,7 +5,7 @@ Add to `.repo/local_manifests/ha3g.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/samsung/ha3g" name="android_device_samsung_ha3g" remote="TeamWin" revision="android-6.0" />
+	<project path="device/samsung/ha3g" name="couths/android_device_samsung_ha3g-twrp" remote="github" revision="android-7.1" />
 </manifest>
 ```
 
@@ -16,7 +16,7 @@ To build:
 ```sh
 . build/envsetup.sh
 lunch omni_ha3g-eng
-make -j5 recoveryimage
+mka recoveryimage
 ```
 
 Kernel sources are available at: https://github.com/jcadduono/android_kernel_samsung_ha3g/tree/twrp-6.0
