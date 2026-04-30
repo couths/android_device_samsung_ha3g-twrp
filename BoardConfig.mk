@@ -10,7 +10,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-t628mp6
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DNO_SECURE_DISCARD
+TARGET_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DNO_SECURE_DISCARD
 
 # Architecture
 TARGET_ARCH := arm
@@ -46,6 +46,10 @@ BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/ha3g/bootimg.mk
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
+TW_EXCLUDE_NANO := true
+# TW_EXCLUDE_BASH := true
+TW_DEFAULT_LANGUAGE := en-US
+TWRP_INCLUDE_LOGCAT := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/s5p-mipi-dsim.1/backlight/panel/brightness"
@@ -55,9 +59,9 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_CRYPTO := true
 TW_NO_EXFAT_FUSE := true
-#TW_INCLUDE_NTFS_3G := true
+# TW_INCLUDE_NTFS_3G := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_EXCLUDE_SUPERSU := true
 
 # Asian region language support (disabled, too big!)
-#TW_EXTRA_LANGUAGES := true
+# TW_EXTRA_LANGUAGES := true
