@@ -1,4 +1,4 @@
-MKBOOTIMG := device/samsung/ha3g/mkbootimg
+MKBOOTIMG := system/core/mkbootimg/mkbootimg
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
